@@ -30,22 +30,22 @@ namespace Lambda
 
 
 
-        //es3
-            DateTime date1 = new DateTime(2019, 02, 02);
-            DateTime date2 = new DateTime(2020, 01, 01);
-            Action<DateTime, DateTime> printMin = (date1, date2) =>
-            {
-                if (date1 < date2)
+            //es3
+                DateTime date1 = new DateTime(2019, 02, 02);
+                DateTime date2 = new DateTime(2020, 01, 01);
+                Action<DateTime, DateTime> printMin = (date1, date2) =>
                 {
-                    Console.WriteLine(date1);
-                }
-                else
-                {
-                    Console.WriteLine(date2);
-                }
-            };
+                    if (date1 < date2)
+                    {
+                        Console.WriteLine(date1);
+                    }
+                    else
+                    {
+                        Console.WriteLine(date2);
+                    }
+                };
 
-            printMin(date1, date2);
+                printMin(date1, date2);
         }
     }
 }
